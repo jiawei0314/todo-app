@@ -12,15 +12,17 @@
 <body>
     <h1>My To Do App</h1>
 
-    <form>
+    <form class="form">
         <input type="text" name="inputText" id="inputText" placeholder="Type in your to do list">
         <button id="addBtn" type="button">Add</button>
     </form>
 
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
+    <ul class="displayText">
+        <div class="displayTextResult">
+            <li>HTML</li>
+            <button class="complete">Complete</button>
+            <button class="delete">Delete</button>
+        </div>
     </ul>
         
     <script src="app.js"></script>
