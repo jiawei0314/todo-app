@@ -47,13 +47,14 @@ h1 {
     cursor: pointer;
 }
 
-.displayText {
+.displayResult {
     list-style-type: none;
 }
 
 .displayTextResult {
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
 }
 
 .displayTextResult > li {
@@ -61,7 +62,7 @@ h1 {
     font-size: 4vmin;
 }
 
-.complete, .delete {
+.completeBtn, .deleteBtn {
     margin-left: 20px;
     font-size: 3vmin;
     padding: 5px 10px;
@@ -70,7 +71,16 @@ h1 {
     border-bottom: 4px solid black;
 }
 
-.complete:hover, .delete:hover {
+.completeBtn:hover, .deleteBtn:hover {
     border: none;
     cursor: pointer;
+}
+
+[done] {
+    color: green;
+    text-decoration: line-through;
+}
+
+.delete_todo {
+    display: none;
 }
